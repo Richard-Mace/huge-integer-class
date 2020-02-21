@@ -123,7 +123,6 @@ private:
     HugeInt&      shiftLeftDigits(int);
 };
 
-
 } /* namespace iota */
 
 #endif /* HUGEINT_H */

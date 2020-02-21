@@ -798,12 +798,12 @@ HugeInt unsigned_divide(const HugeInt& a, const HugeInt& b,
         // of the dividend (now the remainder).
         if (widedigit < 0) {
             quotient.digits_[k] -= 1;
-            carry = 0;
+            widedigit = 0;
             for (int i = 0; i < n; ++i) {
-                widedigit = static_cast<std::uint64_t>(dividend.digits_[k + i])
-                        + divisor.digits_[i] + carry;
+                widedigit += static_cast<std::uint64_t>(dividend.digits_[k + i])
+                           + divisor.digits_[i];
                 dividend.digits_[k + i] = widedigit;
-                carry = widedigit >> 32;
+                widedigit >>= 32;
             }
             
             dividend.digits_[k + n] += carry;
