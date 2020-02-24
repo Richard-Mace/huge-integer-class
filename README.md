@@ -16,7 +16,7 @@ correspondence:
 
  index  |...... |     4    |     3    |     2    |     1    |     0    |
  -------|-------|----------|----------|----------|----------|----------|
- value  |...... | (2<sup>32</sup>)<sup>4</sup> | (2<sup>32</sup>)<sup>3</sup> | (2<sup>32</sup>)<sup>2</sup> | (2<sup>32</sup>)<sup>1</sup> | (2<sup>32</sup>)<sup>0</sup> |
+ **value**  |...... | (2<sup>32</sup>)<sup>4</sup> | (2<sup>32</sup>)<sup>3</sup> | (2<sup>32</sup>)<sup>2</sup> | (2<sup>32</sup>)<sup>1</sup> | (2<sup>32</sup>)<sup>0</sup> |
 
 The physical layout of the `uint32_t` array in memory is:
 
